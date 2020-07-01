@@ -20,6 +20,15 @@ export default function IntroductionImage() {
       fontSize: 100,
       transform: 'translate(-50%, -50%)',
     },
+    name: {
+      left: '70%',
+      top: '80%',
+      position: 'absolute' as 'absolute',
+      color: '#fff',
+      fontFamily: 'GmarketSansTTFMedium',
+      fontSize: 30,
+      transform: 'translate(-50%, -50%)',
+    },
     githubIcon: {
       left: '94%',
       top: '8%',
@@ -45,6 +54,7 @@ export default function IntroductionImage() {
         <div style={style.image}>
           <a href="https://github.com/Jumpis" onMouseOver={handleOnMouseOver} onMouseOut={handleOnMouseOut}><AiOutlineGithub style={style.githubIcon} size={iconSize} color='#fff' /></a>
           <div style={style.text}>Hi! I am Jumpis!</div>
+          <div style={style.name}>개발자 이종현의 포트폴리오</div>
         </div>
       </Parallax>
     </div>

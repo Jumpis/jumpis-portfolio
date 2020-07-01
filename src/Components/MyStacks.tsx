@@ -25,6 +25,14 @@ export default function MyStacks() {
       height: '120vh',
       fontFamily: 'GmarketSansTTFMedium',
     },
+    mystackstitle: {
+      fontFamily: 'GmarketSansTTFMedium',
+      fontSize: '40px',
+      fontWeight: 'bold' as 'bold',
+      textAlign: 'center' as 'center',
+      color: '#ffffff',
+      paddingTop: '40px',
+    },
     stacktitle: {
       fontSize: '30px',
       fontWeight: 'bold' as 'bold',
@@ -54,10 +62,9 @@ export default function MyStacks() {
     }
   };
 
-  let iconSize = 80;
-
   return (
     <div className="MyStacks" style={style.mystacks}>
+      <div style={style.mystackstitle}>STACKS</div>
       <div style={style.stacktitle}>FRONT-END</div>
       <div style={style.icontable}>
         <div title='JAVASCRIPT' style={style.icons}>

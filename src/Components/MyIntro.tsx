@@ -5,18 +5,19 @@ export default function MyIntro() {
 
   const style = {
     myintro: {
-      height: '20vh',
+      height: '30vh',
     },
     text: {
       float: 'left' as 'left',
       fontFamily: 'GmarketSansTTFMedium',
       textAlign: 'center' as 'center',
       width: '20%',
-      paddingTop: '55px',
+      paddingTop: '100px',
       fontSize: '50px',
       fontWeight: 'bold' as 'bold',
     },
     introduceBox: {
+      paddingTop: '50px',
       float: 'left' as 'left',
       fontFamily: 'GmarketSansTTFMedium',
       width: '80%',

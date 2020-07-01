@@ -4,6 +4,8 @@ import App from './App';
 import { Provider } from 'mobx-react';
 import YourStore from './stores/YourStore';
 import * as serviceWorker from './serviceWorker';
+import './index.css';
+import './fonts/CookieRunBold.ttf';
 
 const yourstore = new YourStore();
 

@@ -1,0 +1,6 @@
+@font-face {
+  font-family: 'GmarketSansTTFMedium';
+  src: local('GmarketSansTTFMedium'), url('./fonts/GmarketSansTTFMedium.ttf') format('truetype');
+}
+
+html,body{margin:0;padding:0}

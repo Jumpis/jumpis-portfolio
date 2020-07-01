@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { observer, inject } from "mobx-react";
+import IntroductionImage from './Components/IntroductionImage';
+import MyIntro from './Components/MyIntro';
+import MyStacks from './Components/MyStacks';
+import MyProjects from './Components/MyProjects';
+import ContactMe from './Components/ContactMe';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+@inject("yourstore")
+@observer
+export default class App extends React.Component<any> {
+  render() {
+    return (
+      <div className="App" >
+        <IntroductionImage />
+        <MyIntro />
+        <MyStacks />
+        <MyProjects />
+        <ContactMe />
+      </div>
+    );
+  }
 }
-
-export default App;

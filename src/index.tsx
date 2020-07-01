@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
+import { Provider } from 'mobx-react';
+import YourStore from './stores/YourStore';
 import * as serviceWorker from './serviceWorker';
+import './index.css';
+import './fonts/CookieRunBold.ttf';
+
+const yourstore = new YourStore();
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider yourstore={yourstore}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
